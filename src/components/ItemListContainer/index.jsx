@@ -5,11 +5,19 @@ import Title from "../title";
 
 import ItemCount from "../ItemCount";
 
+
 export const ItemListContainer = ({ texto }) => {
-    return (
+    
+
+        const onAdd = (quantity) => {
+
+            console.log ("Realizaste una compra de " +quantity+ "unidades");
+        
+        }
+        return (
         <>
         <Title greeting={texto} />
-        < ItemCount />
+        < ItemCount  initial={1} stock={5} onAdd={onAdd}/>
         </>
     )
 }
