@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../title"
+import Title from "../title";
 import ItemCount from "../ItemCount";
 
 export const ItemListContainer = ({ texto }) => {
