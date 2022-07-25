@@ -1,9 +1,9 @@
-.books {
+.book {
     display: block;
     width: 300px;
 }
 
-.books img {
+.book img {
     width: 100px;
     height: 100px;
     object-fit: cover;
