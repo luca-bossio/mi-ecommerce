@@ -1,9 +1,9 @@
-.book {
+.colchon {
     display: block;
     width: 300px;
 }
 
-.book img {
+.colchon img {
     width: 100px;
     height: 100px;
     object-fit: cover;
