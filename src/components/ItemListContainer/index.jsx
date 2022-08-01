@@ -16,32 +16,27 @@ const colchones = [
 
 
 export const ItemListContainer = ({ texto }) => {
-const [data , setData] = useState ([]) 
+    const [data, setData] = useState([])
 
-const {categoriaId} = useParams();
+    const { categoriaId } = useParams();
 
-useEffect (() => {
-    const getData = new Promise (resolve => {
-        setTimeout (() => {
-            resolve (colchones)
-        }, 1000);
-    });
-    if (categoriaId) {
-        getData.then (res =>  setData(res.filter(colchon => colchon.category === categoriaId) ));
-    } else {
-    getData.then (res => setData(res));
-    }
-}, [categoriaId])
+    useEffect(() => {
+        const getData = new Promise(resolve => {
+            setTimeout(() => {
+                resolve(colchones)
+            }, 1000);
+        });
+        if (categoriaId) {
+            getData.then(res => setData(res.filter(colchon => colchon.category === categoriaId)));
+        } else {
+            getData.then(res => setData(res));
+        }
+    }, [categoriaId])
 
-    const onAdd = (quantity) => {
 
-        console.log("Realizaste una compra de " + quantity + "unidades");
-
-    }
     return (
         <>
             <Title greeting={texto} />
-            < ItemCount initial={1} stock={5} onAdd={onAdd} />
             <Itemlist data={data} />
         </>
     )
