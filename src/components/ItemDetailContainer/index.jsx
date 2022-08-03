@@ -9,7 +9,7 @@ const colchon = [
 ];
 
 
-export const ItemDetailContainer = () => {
+export const ItemdetailContainer = () => {
     const [data, setData] = useState({});
     const {detalleId} = useParams();
     useEffect(() => {
@@ -28,4 +28,4 @@ export const ItemDetailContainer = () => {
     );
 }
 
-export default ItemDetailContainer;
+export default ItemdetailContainer;
