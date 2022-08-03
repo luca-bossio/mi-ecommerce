@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Title from "../title";
-import ItemCount from "../ItemCount";
 import Itemlist from "../Itemlist";
 import { useParams } from 'react-router-dom';
 
