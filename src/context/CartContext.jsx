@@ -8,17 +8,6 @@ export const useCartContext = () => useContext (CartContext);
  const CartProvider = ({ children }) => {
     const [cart , setCart] = useState ([]);
 
-    const addProduct = (item, newQuantity) => {
-        const newCart = cart.filter (product => product.id !== item.id)
-        newCart.push ({...item, quantity: newQuantity});
-        setCart(newCart)
-    }
-
-    console.log ("Carrito : " , cart)
-
-
-
-
     const clearCart = () => setCart ([]);
 
     const isInCart = (id) => cart.find (product = product.id === id) ? true : false;
@@ -26,6 +15,23 @@ export const useCartContext = () => useContext (CartContext);
     const removeProduct = (id) => setCart(cart.filter(product = product.id !== id));
 
 
+    const addProduct = (item, cantidad) =>{
+        if (isInCart(item.id)) {
+            setCart(cart.map(product => {
+                return product.id === item.id ? {...product, cantidad : product.cantidad + cantidad} : product
+            }))
+        } else{
+            setCart([...cart, {...item , cantidad}])
+        }
+    }
+
+
+    console.log ("Carrito : " , cart)
+
+
+
+
+   
     return (
         <CartContext.Provider value={{
             clearCart,

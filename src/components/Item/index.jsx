@@ -1,6 +1,5 @@
 import "./item.css";
-
-import React, {useContext} from "react";
+import React  from "react";
 import { Link } from 'react-router-dom';
 
 
@@ -8,7 +7,7 @@ const Item = ({info}) => {
    
 
     return (
-        <Link to={"/detalle/${info.id}"} className="colchon">
+        <Link to={`/detalle/${info.id}`} className="colchon">
             <img src={info.image} alt="DW" />
             <p>{info.title}</p>
         </Link>
