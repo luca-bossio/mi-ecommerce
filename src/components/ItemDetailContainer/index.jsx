@@ -4,10 +4,12 @@ import { useParams } from 'react-router-dom';
 
 
 
-const colchon = [
-    { id: 1, title: "Suavestar", image: "https://ar.pinterest.com/pin/834995587139169612/" },
-];
+const colchones = [
+    { id: 1, price:30000 ,title: "Suavestar", image: "https://ar.pinterest.com/pin/834995587139169612/" },
+    { id: 2, price:35000 ,title: "Cannon", image: "https://cannoncordoba.com.ar/" },
+    { id: 3, price:40000 ,title: "Piero", image: "https://www.grupopiero.com/" },
 
+];
 
 export const ItemdetailContainer = () => {
     const [data, setData] = useState({});
@@ -15,10 +17,10 @@ export const ItemdetailContainer = () => {
     useEffect(() => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
-                resolve(colchon);
+                resolve(colchones);
             }, 3000);
         });
-        getData.then (res =>  setData(res.find(colchon => colchon.id === parseInt (detalleId) )));
+        getData.then (res =>  setData(res.find(colchones => colchones.id === parseInt (detalleId) )));
         
     }, [])
 
