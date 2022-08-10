@@ -2,15 +2,7 @@ import React, { useEffect, useState } from "react";
 import Title from "../title";
 import Itemlist from "../Itemlist";
 import { useParams } from 'react-router-dom';
-
-
-const colchones = [
-    { id: 1, price:30000 ,title: "Suavestar", image: "https://ar.pinterest.com/pin/834995587139169612/" },
-    { id: 2, price:35000 ,title: "Cannon", image: "https://cannoncordoba.com.ar/" },
-    { id: 3, price:40000 ,title: "Piero", image: "https://www.grupopiero.com/" },
-
-];
-
+import { collection, getDoc, getFirestore } from "firebase/firestore";
 
 
 
@@ -20,15 +12,24 @@ export const ItemListContainer = ({ texto }) => {
     const { categoriaId } = useParams();
 
     useEffect(() => {
-        const getData = new Promise(resolve => {
-            setTimeout(() => {
-                resolve(colchones)
-            }, 1000);
-        });
+        const querydb = getFirestore();
+        const queryCollection = collection(querydb, "products");
         if (categoriaId) {
-            getData.then(res => setData(res.filter(colchon => colchon.category === categoriaId)));
+            const queryFilter = query(
+                queryCollection,
+                where("id", "==", categoriaId),
+            );
+            getDocs(queryFilter).then((res) =>
+                setData(
+                    res.docs.map((colchones) => ({ id: colchones.id, ...colchones.data() })),
+                ),
+            );
         } else {
-            getData.then(res => setData(res));
+            getDocs(queryCollection).then((res) =>
+                setData(
+                    res.docs.map((colchones) => ({ id: colchones.id, ...colchones.data() })),
+                ),
+            );
         }
     }, [categoriaId])
 

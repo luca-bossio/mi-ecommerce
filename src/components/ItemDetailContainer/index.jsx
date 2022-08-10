@@ -1,28 +1,19 @@
 import React, { useEffect, useState } from "react";
 import Itemdetail from "../ItemDetail";
 import { useParams } from 'react-router-dom';
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 
 
-
-const colchones = [
-    { id: 1, price:30000 ,title: "Suavestar", image: "https://ar.pinterest.com/pin/834995587139169612/" },
-    { id: 2, price:35000 ,title: "Cannon", image: "https://cannoncordoba.com.ar/" },
-    { id: 3, price:40000 ,title: "Piero", image: "https://www.grupopiero.com/" },
-
-];
 
 export const ItemdetailContainer = () => {
     const [data, setData] = useState({});
-    const {detalleId} = useParams();
+    const { detalleId } = useParams();
     useEffect(() => {
-        const getData = new Promise(resolve => {
-            setTimeout(() => {
-                resolve(colchones);
-            }, 3000);
-        });
-        getData.then (res =>  setData(res.find(colchones => colchones.id === parseInt (detalleId) )));
-        
-    }, [])
+        const querydb = getFirestore();
+        const queryDoc = doc(querydb, "products", detalleId);
+        getDoc(queryDoc)
+            .then((res) => setData({ id: res.id, ...res.data() }));
+    }, [detalleId])
 
 
     return (
