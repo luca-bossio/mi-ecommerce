@@ -5,17 +5,7 @@
 }
 
 
-.grid-area {
-    display: grid;
-    gap: 5px;
-    grid-template-areas:
-        "header header header"
-        "main main main"
-        "footer footer footer";
-    height: 100vh;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-}
+
 
 nav {
     grid-area: header;
@@ -35,30 +25,33 @@ nav {
     
 }
 
-.menu {
+.nav-link active menu {
     display: flex;
     flex-direction: row;
     margin: 20px;
     border: 2px solid black;
     border-radius: 5px;
-    background: linear-gradient( rgb(160, 160, 163),white )
+    background: linear-gradient( rgb(160, 160, 163),white );
+    text-decoration: double;
+    
 }
 
-.menu:hover{
+.nav-link active menu:hover {
     transform: scale(1.5,1.5);
     transition: all 1s;
 }
 
-.imagen  {
-
+.Logo  {
     margin: auto;
-    width: 75%;
-    padding: 40px;
+    width: 35%;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
 }
 
-.menu a {
+/* .nav-link active menu  {
     text-decoration: none;
     color: black;
     padding: 5px;
     
-}
+} */

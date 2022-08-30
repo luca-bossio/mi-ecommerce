@@ -2,16 +2,17 @@ import React from "react";
 import Cartwidget from "../Cartwidget"
 import "./navbar.css"
 import { NavLink } from 'react-router-dom'
+import Logo from '../imagenes/logo-lomascolchoneria.png'
 
 
 export const Navbar = () => {
   return (
-    <div className="grid-area">
+    
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <NavLink to="/" className="navbar-brand" >
-            <h1>LO-MAS colchones</h1>
-            </NavLink>
+          <img src={   Logo  } alt="Logo de la colchoneria" width="40%" height="auto" className="Logo"  />
+            </NavLink>    
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -27,7 +28,7 @@ export const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
+ 
 
 
 
