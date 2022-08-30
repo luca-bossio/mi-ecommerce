@@ -6,6 +6,13 @@ import  ItemdetailContainer  from './components/ItemDetailContainer';
 import ItemListContainer  from './components/ItemListContainer';
 import Navbar from "./components/Navbar"
 import CartProvider from './context/CartContext';
+import { Home } from './components/Home/home';
+import Marcas from './components/Marcas/Marcas';
+import Redes from './components/Redes/redes';
+import Contacto from './components/Contacto/contacto'
+import Footer from './components/Footer/footer'
+
+
 
 
 
@@ -16,12 +23,14 @@ function App() {
         <CartProvider>
         <Navbar />
           <Routes>
-            <Route path='/' element={<ItemListContainer />} />
-            <Route path='/categoria/:categoriaId' element={<ItemListContainer />} />
-            <Route path='/cart' element={<Cart />} />
-            <Route path='/detalle/:productoId' element={<ItemdetailContainer />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/categoria/:Marcas' element={<Marcas/>} />
+            <Route path='/categoria/:Contacto' element={<Contacto />} />
+            <Route path='/Tienda' element={<Cart />} />
+            <Route path='/categoria/:Redes' element={<Redes />} />
           </Routes>
         </CartProvider>
+        <Footer></Footer>
       </BrowserRouter>
     </>
   );

@@ -1,0 +1,31 @@
+#pie {
+    margin-top: 0px;
+    text-align: left;
+    background: linear-gradient(to left, blue, rgb(224, 219, 219));
+    border-top: 2px solid rgb(0, 0, 0);
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #pie {
+        display: flex;
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #pie {
+        display: flex;
+        font-size: 15px;
+        align-items: center;
+    }
+}

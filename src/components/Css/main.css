@@ -1,0 +1,177 @@
+.titulo {
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    color: rgb(68, 68, 189);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-area: main;
+}
+
+
+
+
+form div {
+    margin: 10px;
+}
+
+form div textarea {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.aclaraciones {
+    margin: 20px;
+    margin-bottom: 5px;
+}
+
+.main h2 {
+    text-decoration: underline;
+}
+
+.main h3 {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.tienda {
+    margin: 10px;
+    margin-bottom: 5px;
+}
+
+
+
+.tabla {
+    border-spacing: 2px;
+    border: 3px solid black;
+}
+
+.main section {
+    text-align: center;
+    display: table;
+    margin: 5px auto;
+    color: black;
+
+}
+
+.main section .tabla tr td {
+    border: 2px solid black;
+    padding: 3px;
+    background-color: white;
+}
+
+.main section .tabla tr th {
+    border: 2px solid black;
+    padding: 3px;
+    background-color: white;
+}
+
+
+.redesSociales {
+    text-align: left;
+    padding: 20px;
+}
+
+
+
+.lolo {
+    display: flex;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    nav img {
+        width: 40%;
+    }
+
+    .imagen img {
+        display: flex;
+        width: 240%;
+        align-items: center;
+        padding-top: 20px;
+        margin: 5px;
+    }
+
+
+    .titulo {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+
+
+    .main {
+        padding-bottom: 200px;
+    }
+
+
+
+    .redesSociales li {
+        font-size: 20px;
+    }
+
+    .redesSociales li img {
+        width: 5%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    header img {
+        width: 100%;
+    }
+
+
+    header div img {
+        width: 50%;
+    }
+
+    .titulo {
+        font-size: 30px;
+        margin-left: 5px;
+    }
+
+
+
+    .imagen img {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        padding-top: 20px;
+        margin: 5px;
+    }
+
+
+
+    .main {
+        padding-bottom: 100px;
+    }
+
+
+
+    .subtitulo {
+        padding-top: 10px;
+    }
+
+    .redesSociales li {
+        font-size: 25px;
+    }
+
+    .redesSociales li img {
+        width: 10%;
+    }
+
+}
