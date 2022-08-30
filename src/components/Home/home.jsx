@@ -1,7 +1,10 @@
 import React from "react";
 import Cartwidget from "../Cartwidget";
 import "../Css/main.css";
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import  ImagenPublicidad1  from '../imagenes/imagen_publicidad1.jpg'
+import  ImagenPublicidad2  from '../imagenes/imagen-publicidad2.jpg'
+import  ImagenPublicidad3  from '../imagenes/imagen-publicidad3.jpg'
 
 
 export const Home = () => {
@@ -31,13 +34,13 @@ export const Home = () => {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active imagen">
-            <img src="./images/imagen_publicidad1.jpg" class="d-block w-100" alt="Imagen de publicidad"/>
+            <img src={ ImagenPublicidad1 } class="d-block w-100" alt="Imagen de publicidad"/>
           </div>
           <div class="carousel-item  imagen">
-            <img src="./images/imagen-publicidad2.jpg" class="d-block w-100" alt="Imagen de publicidad"/>
+            <img src={ ImagenPublicidad2 } class="d-block w-100" alt="Imagen de publicidad"/>
           </div>
           <div class="carousel-item imagen">
-            <img src="./images/imagen-publicidad3.jpg" class="d-block w-100" alt="Imagen de publicidad"/>
+            <img src={ ImagenPublicidad3 } class="d-block w-100" alt="Imagen de publicidad"/>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
