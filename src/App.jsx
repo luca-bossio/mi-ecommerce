@@ -7,7 +7,7 @@ import ItemListContainer  from './components/ItemListContainer';
 import Navbar from "./components/Navbar"
 import CartProvider from './context/CartContext';
 import { Home } from './components/Home/home';
-import Marcas from './components/Marcas/Marcas';
+import Marcas from './components/Marcas/marcas';
 import Redes from './components/Redes/redes';
 import Contacto from './components/Contacto/contacto'
 import Footer from './components/Footer/footer'
@@ -24,10 +24,10 @@ function App() {
         <Navbar />
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/categoria/:Marcas' element={<Marcas/>} />
-            <Route path='/categoria/:Contacto' element={<Contacto />} />
+            <Route path='/Marcas' element={<Marcas/>} />
+            <Route path='/Contacto' element={<Contacto />} />
             <Route path='/Tienda' element={<Cart />} />
-            <Route path='/categoria/:Redes' element={<Redes />} />
+            <Route path='/Redes' element={<Redes />} />
           </Routes>
         </CartProvider>
         <Footer></Footer>

@@ -1,5 +1,4 @@
 import React from "react";
-import Cartwidget from "../Cartwidget";
 import "../Css/main.css";
 import 'react-router-dom'
 
@@ -92,4 +91,4 @@ export const Contacto = () => {
 )
 }
 
-export default Contacto
+export default Contacto;

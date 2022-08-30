@@ -19,9 +19,9 @@ export const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav lista ">
               <NavLink className="nav-link active menu" aria-current="page" to="/">Inicio</NavLink>
-              <NavLink className="nav-link active menu" to="/categoria/Marcas">Marcas </NavLink>
-              <NavLink className="nav-link active menu" to="/categoria/Contacto">Contacto</NavLink>
-              <NavLink className="nav-link active menu" to="/categoria/Redes">Redes</NavLink>
+              <NavLink className="nav-link active menu" to="/Marcas">Marcas </NavLink>
+              <NavLink className="nav-link active menu" to="/Contacto">Contacto</NavLink>
+              <NavLink className="nav-link active menu" to="/Redes">Redes</NavLink>
               <NavLink className="nav-link active menu" to="/cart">Tienda <Cartwidget /> </NavLink>
             </div>
           </div>
