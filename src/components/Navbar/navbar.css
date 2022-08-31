@@ -25,33 +25,33 @@ nav {
     
 }
 
-.nav-link active menu {
+.menu {
     display: flex;
     flex-direction: row;
     margin: 20px;
     border: 2px solid black;
     border-radius: 5px;
-    background: linear-gradient( rgb(160, 160, 163),white );
-    text-decoration: double;
-    
+    background: linear-gradient( rgb(160, 160, 163),white )
 }
 
-.nav-link active menu:hover {
+.menu:hover{
     transform: scale(1.5,1.5);
     transition: all 1s;
 }
 
 .Logo  {
+
     margin: auto;
-    width: 35%;
-    margin: auto;
-    padding: auto;
+    width: 75%;
+    padding: 40px;
+    padding-left: 250px;
     justify-content: center;
+    align-items: center;
 }
 
-/* .nav-link active menu  {
+.menu a {
     text-decoration: none;
     color: black;
     padding: 5px;
     
-} */
+}

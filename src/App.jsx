@@ -10,7 +10,8 @@ import { Home } from './components/Home/home';
 import Marcas from './components/Marcas/marcas';
 import Redes from './components/Redes/redes';
 import Contacto from './components/Contacto/contacto'
-import Footer from './components/Footer/footer'
+import Footer from './components/Footer/footer';
+
 
 
 

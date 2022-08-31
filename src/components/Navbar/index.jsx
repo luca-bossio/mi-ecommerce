@@ -11,7 +11,7 @@ export const Navbar = () => {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <NavLink to="/" className="navbar-brand" >
-          <img src={   Logo  } alt="Logo de la colchoneria" width="40%" height="auto" className="Logo"  />
+          <img src={   Logo  } alt="Logo de la colchoneria" width="40%" height="auto"  className="Logo"  />
             </NavLink>    
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
