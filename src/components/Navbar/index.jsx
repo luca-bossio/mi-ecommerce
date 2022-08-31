@@ -24,6 +24,7 @@ export const Navbar = () => {
               <NavLink className="nav-link active menu" to="/Contacto">Contacto</NavLink>
               <NavLink className="nav-link active menu" to="/Redes">Redes</NavLink>
               <NavLink className="nav-link active menu" to="/cart">Tienda <Cartwidget /> </NavLink>
+              <NavLink className="nav-link active menu" to="/Productos">Productos  </NavLink>
             </div>
           </div>
         </div>

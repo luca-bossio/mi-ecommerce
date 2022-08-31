@@ -8,21 +8,20 @@ import { addDoc, collection, getFirestore } from "firebase/firestore";
 const Cart = () => {
     const { cart, totalPrice } = useCartContext();
 
-
 	const order = {
-		buyer: {
-			name: "Luca",
-			email: "lbossio2003@gmail.com",
-			phone: "1130284573",
-			address: "Pola 2869",
-		},
-		items: cart.map((product) => ({
+		Persona: {
+            Nombre: 'Luca',
+            Email: 'lbossio2003@gmail.com',
+            Celular: '1130284574',
+            Direccion: 'Pola 2869'
+        },
+        items: cart.map(product => ({ 
 			id: product.id,
-			title: product.title,
-			price: product.price,
-			quantity: product.quantity,
+			titulo: product.title, 
+			cantidad: product.cantidad, 
+			precio: product.price 
 		})),
-		total: totalPrice(),
+        total: totalPrice()
 	};
 
 	const handleClick = () => {
@@ -45,7 +44,7 @@ const Cart = () => {
 			{cart.map((product) => (
 				<ItemCart key={product.id} product={product} />
 			))}
-			<p>total: {totalPrice()}</p>
+			<p>Total: {totalPrice()}</p>
 			<button onClick={handleClick}>Emitir compra</button>
 		</>
 	);

@@ -13,16 +13,22 @@ export const Itemdetail = ({ data }) => {
         setGoToCart(true);
         addProduct(data,quantity);
 
+        console.log(quantity)
     }
 
+   
     return (
         <div className="container">
             <div className="detail">
                 <img className="detail_image" src={data.image} alt="" />
                 <div className="content">
-                    <h1>{data.title}</h1>{
+                    <h1>{data.title}</h1>
+                    <h2>${data.price}</h2>
+                    {
+
+
                         goToCart
-                            ? <Link to={'/cart'}>Finalizar compra</Link>
+                            ? <Link to={'/Tienda'}>Finalizar compra</Link>
                             : < ItemCount initial={1} stock={5} onAdd={onAdd} />
                     }
                 </div>

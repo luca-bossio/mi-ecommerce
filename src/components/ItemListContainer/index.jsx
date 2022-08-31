@@ -9,29 +9,20 @@ import { collection, getDocs, getFirestore, query, where  } from "firebase/fires
 export const ItemListContainer = ({ texto }) => {
     const [data, setData] = useState([])
 
-    const { categoriaId } = useParams();
+   
 
     useEffect(() => {
         const querydb = getFirestore();
-        const queryCollection = collection(querydb, "products");
-        if (categoriaId) {
-            const queryFilter = query(
-                queryCollection,
-                where("id", "==", categoriaId),
-            );
-            getDocs(queryFilter).then((res) =>
-                setData(
-                    res.docs.map((colchones) => ({ id: colchones.id, ...colchones.data() })),
-                ),
-            );
-        } else {
+        const queryCollection = collection(querydb, "Colchones");
+        
+            
             getDocs(queryCollection).then((res) =>
                 setData(
                     res.docs.map((colchones) => ({ id: colchones.id, ...colchones.data() })),
                 ),
             );
-        }
-    }, [categoriaId])
+        
+    }, [])
 
 
     return (

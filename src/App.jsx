@@ -28,7 +28,9 @@ function App() {
             <Route path='/Marcas' element={<Marcas/>} />
             <Route path='/Contacto' element={<Contacto />} />
             <Route path='/Tienda' element={<Cart />} />
+            <Route path='/Productos' element={<ItemListContainer />} />
             <Route path='/Redes' element={<Redes />} />
+            <Route path='/detalle/:detalleId' element={<ItemdetailContainer />} />
           </Routes>
         </CartProvider>
         <Footer></Footer>
