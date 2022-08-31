@@ -11,6 +11,7 @@ import Marcas from './components/Marcas/marcas';
 import Redes from './components/Redes/redes';
 import Contacto from './components/Contacto/contacto'
 import Footer from './components/Footer/footer';
+import Compra from './components/Comprahecha/compraHecha';
 
 
 
@@ -31,6 +32,7 @@ function App() {
             <Route path='/Productos' element={<ItemListContainer />} />
             <Route path='/Redes' element={<Redes />} />
             <Route path='/detalle/:detalleId' element={<ItemdetailContainer />} />
+            <Route path='/CompraRealizadaa' element={<Compra />} />
           </Routes>
         </CartProvider>
         <Footer></Footer>

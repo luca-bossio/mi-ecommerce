@@ -1,11 +1,25 @@
 .itemCart {
     display: flex;
-    border-bottom: 1px solid gray;
+    border: 2px solid black;
+    border-radius: 5px;
     max-width: 500px;
     margin: 1rem auto;
+    background-color: rgb(95, 95, 236) ;
+    padding: 20px;
 }
 
 .itemCart img {
     width: 200px;
     margin-right: 1rem;
+    border: 2px solid black;
 } 
+.borrar {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.tituloProd {
+    font-size: 18px;
+    
+}

@@ -7,12 +7,12 @@ const ItemCart = ({ product }) => {
     return (
         <div className='itemCart'>
             <img src={product.image} alt={product.title} />
-            <div>
-                <p>Título: {product.title}</p>
-                <p>Cantidad: {product.cantidad}</p>
-                <p>Precio: {product.price}</p>
-                <p>Subtotal: ${product.cantidad * product.price}</p>
-                <button onClick={() => removeProduct(product.id)}>Eliminar</button>
+            <div >
+                <p  className='tituloProd' >Título: {product.title}</p>
+                <p  className='tituloProd' >Cantidad: {product.cantidad}</p>
+                <p  className='tituloProd' >Precio: ${product.price}</p>
+                <p  className='tituloProd' >Subtotal: ${product.cantidad * product.price}</p>
+                <button onClick={() => removeProduct(product.id)} className="borrar">Borrar compra</button>
             </div>
         </div>
     )

@@ -28,7 +28,7 @@ export const Itemdetail = ({ data }) => {
 
 
                         goToCart
-                            ? <Link to={'/Tienda'}>Finalizar compra</Link>
+                            ? <Link to={'/Tienda'} className="finalizar">Pasar finalizar compra</Link>
                             : < ItemCount initial={1} stock={5} onAdd={onAdd} />
                     }
                 </div>
