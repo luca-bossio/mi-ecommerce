@@ -18,53 +18,53 @@ export const Marcas = () => {
 
   <table className="tabla">
 
-    <tr>
-      <th>Cannon</th>
-      <th>Suavestar</th>
-      <th>Piero</th>
-      <th>Kavanag</th>
-      <th>Simmons</th>
-    </tr>
+    <table>
+      <thead>Cannon</thead>
+      <thead>Suavestar</thead>
+      <thead>Piero</thead>
+      <thead>Kavanag</thead>
+      <thead>Simmons</thead>
+    </table>
 
-    <tr>
-      <td>Doral</td>
-      <td>Boreal bamboo</td>
-      <td>Nirvana</td>
-      <td>Velvet</td>
-      <td>Yolo</td>
-    </tr>
+    <table>
+      <tbody>Doral</tbody>
+      <tbody>Boreal bamboo</tbody>
+      <tbody>Nirvana</tbody>
+      <tbody>Velvet</tbody>
+      <tbody>Yolo</tbody>
+    </table>
 
-    <tr>
-      <td>Sublime</td>
-      <td>Superstar</td>
-      <td>Namaste</td>
-      <td>Coral</td>
-      <td>Belmo</td>
-    </tr>
+    <table>
+      <tbody>Sublime</tbody>
+      <tbody>Superstar</tbody>
+      <tbody>Namaste</tbody>
+      <tbody>Coral</tbody>
+      <tbody>Belmo</tbody>
+    </table>
 
-    <tr>
-      <td>Especial de lujo</td>
-      <td>Perseus</td>
-      <td>Regno</td>
-      <td>Paradise</td>
-      <td>Beutyrest</td>
-    </tr>
+    <table>
+      <tbody>Especial de lujo</tbody>
+      <tbody>Perseus</tbody>
+      <tbody>Regno</tbody>
+      <tbody>Paradise</tbody>
+      <tbody>Beutyrest</tbody>
+    </table>
 
-    <tr>
-      <td>Exclusive</td>
-      <td>Atmosphere</td>
-      <td>Montreaux</td>
-      <td>People</td>
-      <td>Density</td>
-    </tr>
+    <table>
+      <tbody>Exclusive</tbody>
+      <tbody>Atmosphere</tbody>
+      <tbody>Montableeaux</tbody>
+      <tbody>People</tbody>
+      <tbody>Density</tbody>
+    </table>
 
-    <tr>
-      <td>Renovation</td>
-      <td>Relax</td>
-      <td>Meditare</td>
-      <td>Marfil</td>
-      <td>BackCare</td>
-    </tr>
+    <table>
+      <tbody>Renovation</tbody>
+      <tbody>Relax</tbody>
+      <tbody>Meditare</tbody>
+      <tbody>Marfil</tbody>
+      <tbody>BackCare</tbody>
+    </table>
 
   </table>
 </section>
@@ -75,85 +75,85 @@ export const Marcas = () => {
 
   <table className="tabla">
 
-    <tr>
-      <th>Cannon</th>
-      <th>Suavestar</th>
-      <th>Piero</th>
-      <th>Kavanagh</th>
-      <th>Simmons</th>
-    </tr>
+    <table>
+      <thead>Cannon</thead>
+      <thead>Suavestar</thead>
+      <thead>Piero</thead>
+      <thead>Kavanagh</thead>
+      <thead>Simmons</thead>
+    </table>
 
-    <tr>
-      <td>0.80X1.90</td>
-      <td>0.80X1.90</td>
-      <td>0.80X1.90</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
+    <table>
+      <tbody>0.80X1.90</tbody>
+      <tbody>0.80X1.90</tbody>
+      <tbody>0.80X1.90</tbody>
+      <tbody>-</tbody>
+      <tbody>-</tbody>
+    </table>
 
-    <tr>
-      <td>0.90X1.90</td>
-      <td>0.90X1.90</td>
-      <td>0.90X1.90</td>
-      <td>-</td>
-      <td>0.90X1.90</td>
-    </tr>
+    <table>
+      <tbody>0.90X1.90</tbody>
+      <tbody>0.90X1.90</tbody>
+      <tbody>0.90X1.90</tbody>
+      <tbody>-</tbody>
+      <tbody>0.90X1.90</tbody>
+    </table>
 
-    <tr>
-      <td>1.00X1.90</td>
-      <td>1.00X1.90</td>
-      <td>1.00X1.90</td>
-      <td>1.00X1.90</td>
-      <td>1.00X1.90</td>
-    </tr>
+    <table>
+      <tbody>1.00X1.90</tbody>
+      <tbody>1.00X1.90</tbody>
+      <tbody>1.00X1.90</tbody>
+      <tbody>1.00X1.90</tbody>
+      <tbody>1.00X1.90</tbody>
+    </table>
 
-    <tr>
-      <td>1.30X1.90</td>
-      <td>1.30X1.90</td>
-      <td>1.30X1.90</td>
-      <td>1.30X1.90</td>
-      <td>1.30X1.90</td>
-    </tr>
+    <table>
+      <tbody>1.30X1.90</tbody>
+      <tbody>1.30X1.90</tbody>
+      <tbody>1.30X1.90</tbody>
+      <tbody>1.30X1.90</tbody>
+      <tbody>1.30X1.90</tbody>
+    </table>
 
-    <tr>
-      <td>1.40X1.90</td>
-      <td>1.40X1.90</td>
-      <td>1.40X1.90</td>
-      <td>1.40X1.90</td>
-      <td>1.40X1.90</td>
-    </tr>
+    <table>
+      <tbody>1.40X1.90</tbody>
+      <tbody>1.40X1.90</tbody>
+      <tbody>1.40X1.90</tbody>
+      <tbody>1.40X1.90</tbody>
+      <tbody>1.40X1.90</tbody>
+    </table>
 
-    <tr>
-      <td>1.50X1.90</td>
-      <td>1.50X1.90</td>
-      <td>1.50X1.90</td>
-      <td>1.50X1.90</td>
-      <td>1.50X1.90</td>
-    </tr>
+    <table>
+      <tbody>1.50X1.90</tbody>
+      <tbody>1.50X1.90</tbody>
+      <tbody>1.50X1.90</tbody>
+      <tbody>1.50X1.90</tbody>
+      <tbody>1.50X1.90</tbody>
+    </table>
 
-    <tr>
-      <td>1.60X2.00</td>
-      <td>1.60X2.00</td>
-      <td>1.60X2.00</td>
-      <td>1.60X2.00</td>
-      <td>1.60X2.00</td>
-    </tr>
+    <table>
+      <tbody>1.60X2.00</tbody>
+      <tbody>1.60X2.00</tbody>
+      <tbody>1.60X2.00</tbody>
+      <tbody>1.60X2.00</tbody>
+      <tbody>1.60X2.00</tbody>
+    </table>
 
-    <tr>
-      <td>1.80X2.00</td>
-      <td>1.80X2.00</td>
-      <td>1.80X2.00</td>
-      <td>1.80X2.00</td>
-      <td>1.80X2.00</td>
-    </tr>
+    <table>
+      <tbody>1.80X2.00</tbody>
+      <tbody>1.80X2.00</tbody>
+      <tbody>1.80X2.00</tbody>
+      <tbody>1.80X2.00</tbody>
+      <tbody>1.80X2.00</tbody>
+    </table>
 
-    <tr>
-      <td>2.00X2.00</td>
-      <td>2.00X2.00</td>
-      <td>2.00X2.00</td>
-      <td>2.00X2.00</td>
-      <td>2.00X2.00</td>
-    </tr>
+    <table>
+      <tbody>2.00X2.00</tbody>
+      <tbody>2.00X2.00</tbody>
+      <tbody>2.00X2.00</tbody>
+      <tbody>2.00X2.00</tbody>
+      <tbody>2.00X2.00</tbody>
+    </table>
 
   </table>
 </section>
